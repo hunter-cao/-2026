@@ -206,7 +206,6 @@ h3 {
 .info-grid,
 .checklist-grid,
 .safety-grid,
-.contacts-grid,
 .weather-cards {
   display: grid;
   gap: 16px;
@@ -218,8 +217,7 @@ h3 {
 
 .quick-card,
 .info-card,
-.check-card,
-.contact-card {
+.check-card {
   min-height: 100%;
   padding: 20px;
   background: var(--paper);
@@ -538,24 +536,6 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.contacts-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 22px;
-}
-
-.contact-card {
-  display: grid;
-  gap: 6px;
-}
-
-.contact-card strong {
-  color: var(--teal-dark);
-}
-
-.contact-card span {
-  color: var(--muted);
-}
-
 .action-band {
   background: #29333a;
   color: #fff;
@@ -649,7 +629,6 @@ h3 {
   .quick-grid,
   .info-grid,
   .safety-grid,
-  .contacts-grid,
   .weather-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -689,7 +668,6 @@ h3 {
   .info-grid,
   .checklist-grid,
   .safety-grid,
-  .contacts-grid,
   .weather-cards {
     grid-template-columns: 1fr;
   }
@@ -762,7 +740,6 @@ h3 {
   .quick-card,
   .info-card,
   .check-card,
-  .contact-card,
   .route-card,
   .day-panel,
   .captain-list {
