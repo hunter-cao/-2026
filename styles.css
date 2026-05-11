@@ -489,6 +489,30 @@ h3 {
   margin: 7px 0;
 }
 
+.captain-layout {
+  display: grid;
+  grid-template-columns: 0.74fr 1.26fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.captain-list {
+  margin: 0;
+  padding: 24px 24px 24px 46px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.captain-list li {
+  margin: 7px 0;
+}
+
+.captain-list li::marker {
+  color: var(--orange);
+  font-weight: 900;
+}
+
 .safety-band {
   color: #fff;
   background: var(--teal-dark);
@@ -608,7 +632,8 @@ h3 {
   .hero,
   .split-layout,
   .weather-layout,
-  .checklist-layout {
+  .checklist-layout,
+  .captain-layout {
     grid-template-columns: 1fr;
   }
 
@@ -739,7 +764,8 @@ h3 {
   .check-card,
   .contact-card,
   .route-card,
-  .day-panel {
+  .day-panel,
+  .captain-list {
     box-shadow: none;
   }
 
